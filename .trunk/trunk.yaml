@@ -1,11 +1,11 @@
 version: 0.1
 cli:
-    version: 1.22.5
+    version: 1.22.10
 
 plugins:
     sources:
         - id: trunk
-          ref: v1.6.2
+          ref: v1.6.7
           uri: https://github.com/trunk-io/plugins
 lint:
     disabled:
@@ -13,17 +13,17 @@ lint:
         - prettier
         - shellcheck
     enabled:
-        - checkov@3.2.255
-        - trivy@0.55.2
-        - trufflehog@3.82.2
-        - renovate@38.91.0
+        - checkov@3.2.382
+        - trivy@0.60.0
+        - trufflehog@3.88.15
+        - renovate@39.190.1
         - yamllint@1.35.1
         - shfmt@3.6.0
-        - gitleaks@8.19.2
+        - gitleaks@8.24.0
         - taplo@0.9.3
-        - ktlint@1.3.1
+        - ktlint@1.5.0
         - git-diff-check
-        - actionlint@1.7.1
+        - actionlint@1.7.7
         - detekt-gradle@SYSTEM
     ignore:
         - linters: [ ALL ]
@@ -35,7 +35,7 @@ runtimes:
         - python@3.10.8
         - go@1.21.0
         - java@17.0.6
-        - node@18.13.0
+        - node@18.20.5
 actions:
     enabled:
         - trunk-announce
